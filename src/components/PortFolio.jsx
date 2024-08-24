@@ -105,6 +105,7 @@ const Portfolio = () => {
       </h1>
       <br />
       <h3 className='text-2xl text-green-500 mb-4 font-bold text-left underline'>Featured Projects</h3>
+      <br />
       <div className="flex flex-wrap justify-center gap-6">
         {projects.map((project, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4">
