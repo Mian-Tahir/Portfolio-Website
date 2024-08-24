@@ -4,8 +4,9 @@ import pic from "../../public/photo.avif";
 
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { IoLogoYoutube } from "react-icons/io";
-import { FaTelegram } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
+
+import { FaGithubSquare } from "react-icons/fa";
 
 import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
@@ -29,7 +30,7 @@ function Home() {
               {/* <span >Developer</span> */}
               <ReactTyped
                 className="text-red-700 font-bold"
-                strings={["Developer", "Programmer", "Coder"]}
+                strings={["MernSatckDeveloper", "Full Stack Developer", "Frontend Developer"]}
                 typeSpeed={40}
                 backSpeed={50}
                 loop={true}
@@ -37,11 +38,14 @@ function Home() {
             </div>
             <br />
             <p className="text-sm md:text-md text-justify">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Quisquam, recusandae consequatur. Accusamus sint libero eligendi
-              laborum fuga repudiandae? Asperiores tempore eos animi dolores
-              corrupti! Sint quos, mollitia architecto aliquam nesciunt, optio
-              cum delectus sit voluptatum aut ratione quaerat veniam aperiam!
+              As a dedicated MERN Stack Developer with a year of focused
+              experience, I excel in crafting seamless, high-performance web
+              applications. My expertise spans HTML, CSS, and advanced
+              frameworks like Tailwind CSS, Material UI, and Bootstrap,
+              alongside JavaScript, React JS, Next JS, Node.js, Express.js, and
+              PostgreSQL. I am committed to delivering clean, efficient code
+              that marries design with functionality, consistently bringing
+              innovative ideas to life on the web.
             </p>
             <br />
             {/* social media icons */}
@@ -50,23 +54,23 @@ function Home() {
                 <h1 className="font-bold text-center ">Available on</h1>
                 <ul className="flex space-x-5">
                   <li>
-                    <a href="https://www.facebook.com/" target="_blank">
+                    <a href="https://www.facebook.com/profile.php?id=100040927500381/" target="_blank">
                       <FaSquareFacebook className="text-2xl cursor-pointer" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <a href="https://www.linkedin.com/in/m-tahir-mahmood?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/" target="_blank">
                       <FaLinkedin className="text-2xl cursor-pointer" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/" target="_blank">
-                      <IoLogoYoutube className="text-2xl cursor-pointer" />
+                    <a href="https://www.instagram.com/its_mian178?igsh=ZTR0eDVvZjlkbTk3/" target="_blank">
+                      <FaInstagramSquare className="text-2xl cursor-pointer" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://t.me/" target="_blank">
-                      <FaTelegram className="text-2xl cursor-pointer" />
+                    <a href="https://github.com/Mian-Tahir/" target="_blank">
+                      <FaGithubSquare className="text-2xl cursor-pointer" />
                     </a>
                   </li>
                 </ul>
