@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   FaFacebook,
   FaInstagramSquare,
@@ -23,7 +24,7 @@ function Footer() {
     },
     {
       id: 4,
-      text: "Experience",
+      text: "Experiance",
     },
     {
       id: 5,
@@ -38,29 +39,39 @@ function Footer() {
         <div className="max-w-screen-2xl container mx-auto px-4 md:px-20">
           <div className="flex flex-col md:flex-row items-center justify-between">
             {/* Navigation Links */}
-            <ul className="flex space-x-6 mb-6 md:mb-0">
+            <motion.ul
+              className="flex space-x-6 mb-6 md:mb-0"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               {navItems.map(({ id, text }) => (
-                <li key={id} className="text-sm font-semibold cursor-pointer hover:text-black ">
+                <motion.li
+                  key={id}
+                  className="text-sm font-semibold cursor-pointer hover:text-black"
+                  whileHover={{ scale: 1.1, color: "#007bff" }}
+                  transition={{ duration: 0.3 }}
+                >
                   <Link to={text} smooth={true} duration={500} offset={-70} activeClass="active">
                     {text}
                   </Link>
-                </li>
+                </motion.li>
               ))}
-            </ul>
+            </motion.ul>
 
             {/* Social Media Icons */}
             <div className="flex space-x-4 mb-6 md:mb-0">
               <a href="https://www.facebook.com/profile.php?id=100040927500381/" target="_blank" rel="noopener noreferrer">
-                <FaFacebook size={24} className="hover:text-black  cursor-pointer" />
+                <FaFacebook size={24} className="hover:text-black cursor-pointer" />
               </a>
               <a href="https://github.com/Mian-Tahir/" target="_blank" rel="noopener noreferrer">
                 <FaGithubSquare size={24} className="hover:text-black cursor-pointer" />
               </a>
               <a href="https://www.instagram.com/its_mian178?igsh=ZTR0eDVvZjlkbTk3/" target="_blank" rel="noopener noreferrer">
-                <FaInstagramSquare size={24} className="hover:text-black  cursor-pointer" />
+                <FaInstagramSquare size={24} className="hover:text-black cursor-pointer" />
               </a>
               <a href="https://www.linkedin.com/in/m-tahir-mahmood?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin size={24} className="hover:text-black -500 cursor-pointer" />
+                <FaLinkedin size={24} className="hover:text-black cursor-pointer" />
               </a>
             </div>
           </div>
