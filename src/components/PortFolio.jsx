@@ -61,7 +61,7 @@ const Card = ({ image, title, description, techs, githubLink }) => {
 const Portfolio = () => {
   const projects = [
     {
-      image: "/public/movie_site.png",
+      image: "movie_site.png",
       title: "Movies Website",
       description: "Developed a movie search website using the OMDb API, allowing users to explore and discover movie details effortlessly.",
       techs: [
@@ -72,7 +72,7 @@ const Portfolio = () => {
       githubLink: "https://github.com/Mian-Tahir/static-website",
     },
     {
-      image: "/public/wheath_app.png",
+      image: "wheath_app.png",
       title: "Weather APP",
       description: "Created a weather application using React and Tailwind CSS, providing users with real-time weather updates and forecasts based on their location.",
       techs: [
@@ -83,7 +83,7 @@ const Portfolio = () => {
       githubLink: "https://github.com/Mian-Tahir/Weather-App",
     },
     {
-      image: "/public/wheath_app.png",
+      image: "to_do_APP.PNG",
       title: "To Do App",
       description: "Built a dynamic to-do app with React js for efficient task management, featuring a seamless, interactive interface.",
       techs: [
@@ -94,7 +94,7 @@ const Portfolio = () => {
       githubLink: "https://github.com/Mian-Tahir/Weather-App",
     },
     {
-      image: "/public/ecomerce_1.png",
+      image: "ecomerce_1.png",
       title: "Ecomerce Store",
       description: "Created an intuitive e-commerce store, optimizing user experience with seamless navigation and secure transactions.",
       techs: [
@@ -105,7 +105,7 @@ const Portfolio = () => {
       githubLink: "https://github.com/Mian-Tahir/Weather-App",
     },
     {
-      image: "/public/portfolio_website.png",
+      image: "portfolio_website.png",
       title: "Portfolio Website",
       description: "Developed a sleek portfolio website showcasing projects, skills, and experience with a clean, responsive design.",
       techs: [
@@ -116,7 +116,7 @@ const Portfolio = () => {
       githubLink: "https://github.com/Mian-Tahir/Next-js-E-Commerce-Store",
     },
     {
-      image: "/public/YouTube_MP3_1.PNG",
+      image: "YouTube_MP3_1.PNG",
       title: "Youtube to Mp3 Converter",
       description: "Created an efficient YouTube to MP3 converter with a user-friendly interface, offering quick and reliable conversions with a sleek design.",
       techs: [
