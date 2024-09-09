@@ -2,29 +2,49 @@ import React from 'react';
 import 'animate.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faGithub, faReact } from '@fortawesome/free-brands-svg-icons';
+import { motion } from 'framer-motion';
 
 const Card = ({ image, title, description, techs, githubLink }) => {
   return (
-    <div className="w-full bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50">
+    <motion.div 
+      className="w-full bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+    >
       <img
         src={image}
         alt="Project Cover"
         className="w-full h-[200px] object-cover transition-transform duration-500 ease-in-out hover:scale-110 hover:brightness-125 hover:contrast-125"
       />
       <div className="p-6">
-        <h2 className="text-black text-2xl font-bold mb-4 animate__animated animate__fadeInDown">
+        <motion.h2 
+          className="text-black text-2xl font-bold mb-4 animate__animated animate__fadeInDown"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           {title}
-        </h2>
-        <p className="text-gray-700 text-base mb-4 leading-relaxed animate__animated animate__fadeIn">
+        </motion.h2>
+        <motion.p 
+          className="text-gray-700 text-base mb-4 leading-relaxed animate__animated animate__fadeIn"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           {description}
-        </p>
-        <div className="flex gap-3 mb-6 animate__animated animate__fadeIn">
+        </motion.p>
+        <motion.div 
+          className="flex gap-3 mb-6 animate__animated animate__fadeIn"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
           {techs.map((tech) => (
             <span key={tech.name} className="flex items-center gap-2 py-1 px-3 bg-blue-50 rounded-full text-sm text-blue-700 transition-transform duration-300 ease-in-out hover:translate-y-[-3px] hover:shadow-blue-500/50">
               <FontAwesomeIcon icon={tech.icon} className={`text-${tech.color}`} /> {tech.name}
             </span>
           ))}
-        </div>
+        </motion.div>
         <a
           href={githubLink}
           className="inline-block py-3 px-6 bg-gradient-to-r from-blue-500 to-green-500 text-white text-sm font-bold uppercase rounded-full tracking-wide transition-transform duration-300 ease-in-out hover:translate-y-[-3px] hover:shadow-blue-500/50 relative overflow-hidden"
@@ -34,7 +54,7 @@ const Card = ({ image, title, description, techs, githubLink }) => {
           <FontAwesomeIcon icon={faGithub} /> View on GitHub
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -100,17 +120,35 @@ const Portfolio = () => {
 
   return (
     <div id="Portfolio" className="bg-white p-8">
-      <h1 className="text-3xl text-black mb-5 font-bold text-left">
+      <motion.h1 
+        className="text-3xl text-black mb-5 font-bold text-left"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         Portfolio
-      </h1>
+      </motion.h1>
       <br />
-      <h3 className='text-2xl text-green-500 mb-4 font-bold text-left underline'>Featured Projects</h3>
+      <motion.h3 
+        className='text-2xl text-green-500 mb-4 font-bold text-left underline'
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        Featured Projects
+      </motion.h3>
       <br />
       <div className="flex flex-wrap justify-center gap-6">
         {projects.map((project, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4">
+          <motion.div 
+            key={index}
+            className="w-full sm:w-1/2 lg:w-1/3 px-4"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 * index }}
+          >
             <Card {...project} />
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
