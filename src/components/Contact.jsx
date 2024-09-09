@@ -32,7 +32,7 @@ const Contact = () => {
     const formErrors = validateForm();
     if (Object.keys(formErrors).length === 0) {
       // Process the form
-      alert('Form submitted successfully!');
+      alert('Your message has been successufully sent !');
       setFormData({ name: '', email: '', message: '' }); // Clear form
     } else {
       setErrors(formErrors);

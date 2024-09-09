@@ -115,6 +115,17 @@ const Portfolio = () => {
       ],
       githubLink: "https://github.com/Mian-Tahir/Next-js-E-Commerce-Store",
     },
+    {
+      image: "/public/YouTube MP3 1.PNG",
+      title: "Youtube to Mp3 Converter",
+      description: "Created an efficient YouTube to MP3 converter with a user-friendly interface, offering quick and reliable conversions with a sleek design.",
+      techs: [
+        {  name: "HTML" ,icon: faHtml5, color: "#E44D26" },
+        { name: "CSS", icon: faCss3Alt, color: "#264DE4" },
+        { name: "JavaScript", icon: faJs, color: "#F0DB4F" },
+      ],
+      githubLink: "https://github.com/Mian-Tahir/Youtube-to-Mp3-Converter",
+    },
     // Add more project objects here...
   ];
 

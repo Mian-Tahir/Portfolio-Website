@@ -68,7 +68,7 @@ function Experiance() {
         <p className="mb-8" data-aos="fade-right">
           I've more than 1 year of experience in the following technologies:
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-7 my-3">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-7 my-5">
           {cardItem.map(({ id, logo, name }) => (
             <div
               key={id}
