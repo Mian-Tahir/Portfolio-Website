@@ -79,8 +79,13 @@ function Home() {
                   <FaNodeJs className="text-2xl md:text-3xl hover:scale-125 hover:text-green-600 hover:shadow-lg hover:bg-green-50 p-1 rounded-full duration-500 ease-in-out transition-all cursor-pointer" />
                 </div>
               </div>
+              <div class="relative overflow-hidden h-12 px-8 rounded-full bg-gr text-white cursor-pointer group">
+  <div class="relative z-20">Download CV</div>
+  <div class="absolute top-0 left-0 transform scale-x-0 origin-left w-full h-full rounded-full bg-gradient-to-r from-purple-500 to-blue-500 transition-transform duration-475 group-hover:scale-x-100"></div>
+</div>
             </motion.div>
           </motion.div>
+          
           
           {/* Image Section */}
           <motion.div

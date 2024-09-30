@@ -132,7 +132,7 @@ const Portfolio = () => {
   return (
     <div id="Portfolio" className="bg-white p-8">
       <motion.h1 
-        className="text-3xl text-black mb-5 font-bold text-left"
+        className="text-3xl text-black mb-5  ml-20  font-bold text-left"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -141,7 +141,7 @@ const Portfolio = () => {
       </motion.h1>
       <br />
       <motion.h3 
-        className='text-2xl text-green-500 mb-4 font-bold text-left underline'
+        className='text-2xl text-green-500 mb-4  ml-20 font-bold text-left underline'
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}

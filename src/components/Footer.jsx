@@ -62,16 +62,16 @@ function Footer() {
             {/* Social Media Icons */}
             <div className="flex space-x-4 mb-6 md:mb-0">
               <a href="https://www.facebook.com/profile.php?id=100040927500381/" target="_blank" rel="noopener noreferrer">
-                <FaFacebook size={24} className="hover:text-black cursor-pointer" />
+                <FaFacebook size={30} className=" hover:scale-125 hover:text-blue-700 hover:shadow-lg duration-500 ease-in-out transition-all  cursor-pointer" />
               </a>
               <a href="https://github.com/Mian-Tahir/" target="_blank" rel="noopener noreferrer">
-                <FaGithubSquare size={24} className="hover:text-black cursor-pointer" />
+                <FaGithubSquare size={30} className=" hover:scale-125 hover:text-gray-800 hover:shadow-lg duration-500 ease-in-out transition-all  cursor-pointer" />
               </a>
               <a href="https://www.instagram.com/its_mian178?igsh=ZTR0eDVvZjlkbTk3/" target="_blank" rel="noopener noreferrer">
-                <FaInstagramSquare size={24} className="hover:text-black cursor-pointer" />
+                <FaInstagramSquare size={30} className="hover:scale-125 hover:text-pink-600 hover:shadow-lg duration-500 ease-in-out transition-all cursor-pointer" />
               </a>
               <a href="https://www.linkedin.com/in/m-tahir-mahmood?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin size={24} className="hover:text-black cursor-pointer" />
+                <FaLinkedin size={30} className= "hover:scale-125 hover:text-blue-700 hover:shadow-lg duration-500 ease-in-out transition-all cursor-pointer" />
               </a>
             </div>
           </div>

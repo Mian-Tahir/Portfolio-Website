@@ -77,10 +77,10 @@ function Experiance() {
             >
               <img
                 src={logo}
-                className="w-[150px] h-[150px] rounded-full object-cover"
+                className="w-[135px] h-[135px] rounded-full object-cover "
                 alt={name}
               />
-              <div className="mt-3 text-lg font-semibold">{name}</div>
+              <div className="mt-3 text-lg  text-center font-semibold">{name}</div>
             </div>
           ))}
         </div>
