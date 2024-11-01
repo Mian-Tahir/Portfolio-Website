@@ -40,7 +40,7 @@ const Card = ({ image, title, description, techs, githubLink }) => {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           {techs.map((tech) => (
-            <span key={tech.name} className="flex items-center gap-2 py-1 px-3 bg-blue-50 rounded-full text-sm text-blue-700 transition-transform duration-300 ease-in-out hover:translate-y-[-3px] hover:shadow-blue-500/50">
+            <span key={tech.name} className="flex items-center gap-1 py-1 px-2 bg-blue-50 rounded-full text-sm text-blue-700 transition-transform duration-300 ease-in-out hover:translate-y-[-3px] hover:shadow-blue-500/50">
               <FontAwesomeIcon icon={tech.icon} className={`text-${tech.color}`} /> {tech.name}
             </span>
           ))}
@@ -132,7 +132,7 @@ const Portfolio = () => {
   return (
     <div id="Portfolio" className="bg-white p-8">
       <motion.h1 
-        className="text-3xl text-black mb-5  ml-20  font-bold text-left"
+        className="text-3xl text-black mb-5 md:ml-20  ml-2  font-bold text-left"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -141,7 +141,7 @@ const Portfolio = () => {
       </motion.h1>
       <br />
       <motion.h3 
-        className='text-2xl text-green-500 mb-4  ml-20 font-bold text-left underline'
+        className='text-2xl text-green-500 mb-4 md:ml-20    ml-2   font-bold text-left underline'
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
