@@ -57,10 +57,55 @@ function About() {
           management and API handling.
         </p>
         <br />
+        
+        
         <h1 className="text-green-600 font-semibold text-xl" data-aos="fade-right">
           Professional Experience
         </h1>
         <ul className="list-disc ml-5 space-y-4" data-aos="fade-left">
+        <li>
+            <h5 className="font-semibold text-lg">MERN Stack Developer</h5>
+            <p>MiniByte.ai (09/2024 -Continue ), Rawalpindi</p>
+            <ul className="ml-5 list-disc space-y-2">
+  <li>
+  Engineered scalable web applications utilizing the MERN stack.
+  </li>
+  <li>
+  Worked closely with cross-functional teams for design and deployment.
+  </li>
+  <li>
+   Used contemporary tools such as RESTful APIs, Redux Toolkit, and Redux for managing application state.
+  </li>
+  <li>
+    Managed project versioning and team collaboration using Git.
+  </li>
+  <li>
+    Led the integration of third-party services and APIs to enhance application functionality.
+  </li>
+  <li>
+    Optimized application performance and ensured a seamless user experience through code refactoring and debugging.
+  </li>
+  <li>
+    Contributed to the creation of automated testing pipelines, improving code quality and deployment speed.
+  </li>
+  <li>
+    Played a key role in maintaining high availability and scalability of web applications in production environments.
+  </li>
+  <li>
+    Delivered responsive and adaptive designs, ensuring mobile-first, cross-browser compatibility.
+  </li>
+  <li>
+    Worked on diverse projects such as Hotel Management System, CoinGecko, FaceSwap AI, AI Call Agent, and AI Video Generation.
+  </li>
+  <li>
+    Enhanced user experience and functionality in AI-driven projects like FaceSwap and AI Video Generation.
+  </li>
+  <li>
+    Contributed to the development of an AI Call Agent project, improving communication and customer interaction.
+  </li>
+</ul>
+
+          </li>
           <li>
             <h5 className="font-semibold text-lg">Junior MERN Stack Developer</h5>
             <p>CortechSols Pvt Ltd (03/2024 - 05/2024), Rawalpindi</p>
