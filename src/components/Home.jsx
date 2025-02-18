@@ -1,20 +1,40 @@
 import React from "react";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
 import profile from "../../public/PORTFOLIO IMGAE.jpg";
 import { FaFacebookSquare, FaLinkedin, FaInstagramSquare, FaGithubSquare, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si";
+import { HiArrowSmRight } from "react-icons/hi";
 import { ReactTyped } from 'react-typed';
 
 function Home() {
+  const handleDownloadCV = async () => {
+    try {
+      const cvUrl = '/public/Tahir Euro Pass CV.pdf';
+      const link = document.createElement('a');
+      link.href = cvUrl;
+      link.setAttribute('download', 'Tahir Mehmood-CV.pdf');
+      
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // Optional: Add success feedback
+      // showNotification('CV downloaded successfully!');
+    } catch (error) {
+      console.error('Error downloading CV:', error);
+      // Optional: Add error feedback
+      // showNotification('Failed to download CV. Please try again.');
+    }
+  };
   return (
     <>
       <div name="Home" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-28">
         <div className="flex flex-col md:flex-row">
           {/* Text Section */}
           <motion.div
-            initial={{ x: -200, opacity: 0 }} // Animating from left
-            animate={{ x: 0, opacity: 1 }} // Move to the normal position
-            transition={{ duration: 1.2 }} // Animation duration
+            initial={{ x: -200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.2 }}
             className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1"
           >
             <span className="text-xl">Welcome In My Feed</span>
@@ -39,9 +59,9 @@ function Home() {
             <br />
             {/* Social Links */}
             <motion.div
-              initial={{ y: 200, opacity: 0 }} // Animating from bottom
-              animate={{ y: 0, opacity: 1 }} // Move to normal position
-              transition={{ duration: 1.2, delay: 0.5 }} // Delay for smoother appearance
+              initial={{ y: 200, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1.2, delay: 0.5 }}
               className="flex flex-col items-center md:flex-row justify-between space-y-6 md:space-y-0"
             >
               <div className="space-y-2">
@@ -79,19 +99,46 @@ function Home() {
                   <FaNodeJs className="text-2xl md:text-3xl hover:scale-125 hover:text-green-600 hover:shadow-lg hover:bg-green-50 p-1 rounded-full duration-500 ease-in-out transition-all cursor-pointer" />
                 </div>
               </div>
-              <div class="relative overflow-hidden h-12 px-8 rounded-full bg-gr text-white cursor-pointer group">
-  <div class="relative z-20">Download CV</div>
-  <div class="absolute top-0 left-0 transform scale-x-0 origin-left w-full h-full rounded-full bg-gradient-to-r from-purple-500 to-blue-500 transition-transform duration-475 group-hover:scale-x-100"></div>
-</div>
+            </motion.div>
+            
+            {/* Download CV Button */}
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="flex justify-center md:justify-start mt-8"
+            >
+              <motion.button 
+                onClick={handleDownloadCV}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative px-8 py-3 mt-8 font-semibold text-white rounded-full 
+                          bg-gradient-to-r from-blue-600 via-blue-500 to-teal-400
+                          hover:from-blue-700 hover:via-blue-600 hover:to-teal-500
+                          shadow-lg hover:shadow-xl
+                          transition-all duration-300 ease-in-out
+                          overflow-hidden"
+              >
+                <span className="relative z-10 flex items-center justify-center">
+                  <span className="text-lg">Download CV</span>
+                  <motion.span
+                    className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    initial={{ x: -10 }}
+                    animate={{ x: 0 }}
+                  >
+                    <HiArrowSmRight  size={30}/>
+                  </motion.span>
+                </span>
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-700 via-blue-600 to-teal-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+              </motion.button>
             </motion.div>
           </motion.div>
           
-          
           {/* Image Section */}
           <motion.div
-            initial={{ x: 200, opacity: 0 }} // Animating from right
-            animate={{ x: 0, opacity: 1 }} // Move to the normal position
-            transition={{ duration: 1.2 }} // Animation duration
+            initial={{ x: 200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.2 }}
             className="md:w-1/2 md:ml-48 md:mt-20 mt-8 order-1"
           >
             <img src={profile} className="rounded-full md:w-[450px] md:h-[450px]" alt="Profile" />

@@ -77,7 +77,7 @@ function Footer() {
           </div>
 
           <div className="mt-8 border-t border-gray-300 pt-8 text-center">
-            <p className="text-sm">&copy; 2024 Tahir Mehmood. All rights reserved.</p>
+            <p className="text-sm">&copy; 2025 Tahir Mehmood. All rights reserved.</p>
           </div>
         </div>
       </footer>
